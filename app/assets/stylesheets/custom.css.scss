@@ -28,3 +28,32 @@ body {
 	padding-top: 9px;
 	font-weight: bold;
 }
+
+/* accordion and list-item styles */
+.accordion {
+	margin: 0 auto;
+	width: 400px;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #1486BD;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.ui-accordion-header:focus {
+	outline-width: 0;
+}
+
+.accordion h3 {
+	text-align: center;
+	color: #fff;
+	font-family: 'Helvetica', 'Arial'; 
+}
+
+.list-items {
+	background-color: #DCDCDA;
+}
+
+.list-items li {
+	list-style: none;
+}
