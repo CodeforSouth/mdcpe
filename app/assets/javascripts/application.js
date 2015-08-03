@@ -14,6 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-var main = function() {
-	
-}
+
+$(function() {
+	$( ".accordion" ).accordion({
+		collapsible: true,
+		active: false
+	});
+});
