@@ -5,4 +5,8 @@ class PermitsController < ApplicationController
 
   def help
   end
+
+  def main
+    @categories = Category.all
+  end
 end
