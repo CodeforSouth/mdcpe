@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contractorzip: 1
+  proposedusedescription: MyString
+  permittype: MyString
+  contractoraddress: MyString
+  folionumber: MyString
+  applicationtypecode: 1
+  typecodedescription: MyString
+  contractorcity: MyString
+  contractorname: MyString
+  proposedusecode: 1
+  units: 1
+  estimatedvalue: 9.99
+  floors: 1
+  squarefeet: 1
+  ownername: MyString
+  contractorstate: MyString
+  architectname: MyString
+  issuedate: 2015-08-03 10:41:39
+  legaldescription1: MyString
+  permitnumber: 1
+  legaldescription2: MyString
+  contractorphone: MyString
+  jobsite: MyString
+  categories: 1
+  proposedusedetail: MyString
+
+two:
+  contractorzip: 1
+  proposedusedescription: MyString
+  permittype: MyString
+  contractoraddress: MyString
+  folionumber: MyString
+  applicationtypecode: 1
+  typecodedescription: MyString
+  contractorcity: MyString
+  contractorname: MyString
+  proposedusecode: 1
+  units: 1
+  estimatedvalue: 9.99
+  floors: 1
+  squarefeet: 1
+  ownername: MyString
+  contractorstate: MyString
+  architectname: MyString
+  issuedate: 2015-08-03 10:41:39
+  legaldescription1: MyString
+  permitnumber: 1
+  legaldescription2: MyString
+  contractorphone: MyString
+  jobsite: MyString
+  categories: 1
+  proposedusedetail: MyString

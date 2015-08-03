@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  database: mips
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database: mips-test
+
+production:
+  <<: *default
+  database: mips
