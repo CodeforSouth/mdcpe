@@ -5,4 +5,7 @@ class PermitsController < ApplicationController
 
   def help
   end
+
+  def results
+  end
 end

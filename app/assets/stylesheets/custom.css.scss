@@ -1,18 +1,11 @@
-@import 'bootstrap-sprockets';
-@import 'bootstrap';
-
 /* universal */
-body {
-	padding-top: 60px;
-}
-
 
 /* navbar styles */
-.navbar-fixed-top {
+.navbar-container {
 	background-color: #1486BD;
 }
 
-.navbar-fixed-top .navbar-nav > li > a {
+.navbar-container li {
 	color: #fff;
 	font-family: 'Helvetica', 'Arial'; 
 	font-weight: bold;
