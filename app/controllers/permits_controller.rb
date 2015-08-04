@@ -1,11 +1,14 @@
 class PermitsController < ApplicationController
   def home
-    @categories = Category.all
   end
 
   def help
   end
 
-  def results
+  def show_business
+    @categories = Category.all
+  end
+
+  def show_permits
   end
 end

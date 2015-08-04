@@ -1,7 +1,8 @@
 class Category
 
   def self.all
-    {"Commercial / Office"                => COMMERCIAL_OFFICE,
+    {
+      "Commercial / Office"               => COMMERCIAL_OFFICE,
       "Residential"                       => RESIDENTIAL,
       "Leisure / Travel / Recreational"   => LEISURE_TRAVEL_RECREATIONAL,
       "Retail / Services"                 => RETAIL_SERVICES,
