@@ -1,12 +1,8 @@
 class PermitsController < ApplicationController
   def home
-    @permits = Permit.first
+    @categories = Category.all
   end
 
   def help
-  end
-
-  def main
-    @categories = Category.all
   end
 end
