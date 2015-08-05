@@ -1,7 +1,7 @@
 <% @business_types.each do |business_type| %>
 
 <div class="business-type-box">
-	<%= link_to show_permits_path do %>
+	<%= link_to show_permits_path(business_type.name) do %>
 	<h3><%= business_type.name %></h3>
 	<% end %>
 

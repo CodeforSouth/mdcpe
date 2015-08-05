@@ -10,5 +10,6 @@ class PermitsController < ApplicationController
   end
 
   def show_permits
+    @business = BusinessType.find_by_name(params[:name])
   end
 end

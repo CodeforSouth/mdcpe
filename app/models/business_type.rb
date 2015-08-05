@@ -10,6 +10,10 @@ class BusinessType
     Permit.where(proposedusedescription: @proposed_use_descriptions).select(:categories).distinct.pluck(:categories)
   end
 
+  def category_names
+    categories.map {|category| CategoryCode[category]}
+  end
+
 
   def self.all
     [ COMMERCIAL_OFFICE,
@@ -18,8 +22,17 @@ class BusinessType
       RETAIL_SERVICES,
       MEDICAL, EDUCATION,
       INDUSTRIAL,
-      MISCELLANEOUS]
+      MISCELLANEOUS
+    ]
+  end
+
+  def self.find_by_name name
+    all.each do |a|
+      if name == a.name
+        return a
+      end
     end
+  end
 
   # Commercial / Offices categories
   COMMERCIAL_OFFICE = self.new("Commercial / Office",
