@@ -22,8 +22,8 @@
 	font-weight: bold;
 }
 
-/* accordion and list-item styles */
-.accordion {
+/* business-type-box and list-item styles */
+.business-type-box {
 	margin: 0 auto;
 	width: 400px;
 	border-style: solid;
@@ -33,11 +33,7 @@
 	padding-bottom: 5px;
 }
 
-.ui-accordion-header:focus {
-	outline-width: 0;
-}
-
-.accordion h3 {
+.business-type-box h3 {
 	text-align: center;
 	color: #fff;
 	font-family: 'Helvetica', 'Arial'; 
