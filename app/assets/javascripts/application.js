@@ -15,9 +15,9 @@
 //= require turbolinks
 //= require_tree .
 
-// $(function() {
-// 	$( ".accordion" ).accordion({
-// 		collapsible: true,
-// 		active: false
-// 	});
-// });
+$(function() {
+	$( ".business-type-box" ).accordion({
+		collapsible: true,
+		active: false
+	});
+});
