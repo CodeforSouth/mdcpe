@@ -23,20 +23,23 @@
 // });
 
 $(document).ready(function(){
-	$('button').click(function () {
+	var showTotal = function () {
 		var total = 0;
 
 		$(':checkbox:checked.total').each(function () {
-			total += +this.value;
+			total += +$(this).data()['average'];
+			total = total;
 		});
 
-		alert(total)
-	});
+		$('#output').text(total);
+	}
+	
+	$("input[type='checkbox']").change(showTotal);
 });
 
-$(function() {
-	$('.business-type-box').accordion({
-		collapsible: true,
-		active: false
-	});
-});
+// $(function() {
+// 	$('.business-type-box').accordion({
+// 		collapsible: true,
+// 		active: false
+// 	});
+// });
