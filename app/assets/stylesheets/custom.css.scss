@@ -1,48 +1,73 @@
-/* universal */
-
-/* navbar styles */
-.navbar-container {
-	background-color: #1486BD;
+.side-bar {
+  border: 1px solid #C0C0C0;
+  background-color: #F9F9F9;
 }
-
-.navbar-container li {
-	color: #fff;
-	font-family: 'Helvetica', 'Arial'; 
-	font-weight: bold;
+.col-xs-5 .business-type-box {
+  border: 1px solid #C0C0C0;
+  background-color: #F9F9F9;
 }
-
-/* header styles */
-#logo {
-	float: left;
-	margin-right: 10px;
-	font-size: 1.7em;
-	color: white;
-	text-transform: uppercase;
-	padding-top: 9px;
-	font-weight: bold;
-}
-
-/* business-type-box and list-item styles */
-.business-type-box {
-	margin: 0 auto;
-	width: 400px;
-	border-style: solid;
-	border-width: 1px;
-	background-color: #1486BD;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
 .business-type-box h3 {
-	text-align: center;
-	color: #fff;
-	font-family: 'Helvetica', 'Arial'; 
+  color: black;
+  margin-left:1em;
+  text-transform: uppercase;
 }
-
-.list-items {
-	background-color: #DCDCDA;
-}
-
 .list-items li {
-	list-style: none;
+  list-style: none;
 }
+
+.nav .nav-pills {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+
+
+
+// /* universal */
+//
+// /* navbar styles */
+// .navbar-container {
+// 	background-color: #1486BD;
+// }
+//
+// .navbar-container li {
+// 	color: #fff;
+// 	font-family: 'Helvetica', 'Arial';
+// 	font-weight: bold;
+// }
+//
+// /* header styles */
+// #logo {
+// 	float: left;
+// 	margin-right: 10px;
+// 	font-size: 1.7em;
+// 	color: white;
+// 	text-transform: uppercase;
+// 	padding-top: 9px;
+// 	font-weight: bold;
+// }
+//
+// /* business-type-box and list-item styles */
+// .business-type-box {
+// 	margin: 0 auto;
+// 	width: 400px;
+// 	border-style: solid;
+// 	border-width: 1px;
+// 	background-color: #1486BD;
+// 	padding-top: 5px;
+// 	padding-bottom: 5px;
+// }
+//
+// .business-type-box h3 {
+// 	text-align: center;
+// 	color: #fff;
+// 	font-family: 'Helvetica', 'Arial';
+// }
+//
+// .list-items {
+// 	background-color: #DCDCDA;
+// }
+//
+// .list-items li {
+// 	list-style: none;
+// }

@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mips</title>
+	<title>Miami Dade Permit Estimator</title>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<%= csrf_meta_tags %>
 </head>
+
 <body>
-	<%= render 'layouts/header' %>
+
+	<header class="page-header">
+
+		<div class="nav">
+			<%= link_to root_path, id: "logo" do %>
+				<h5>Miami Dade County</h5>
+				<h4>Permit Estimator</h4>
+			<% end %>
+
+			<ul class="nav nav-pills navbar-right">
+				<li><%= link_to "Home", 	root_path %></li>
+				<li><%= link_to "Help",		help_path %></li>
+			</ul>
+		</div>
+
+	</header>
+
 	<%= yield %>
 
 </body>

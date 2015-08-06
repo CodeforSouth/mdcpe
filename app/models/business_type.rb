@@ -39,7 +39,7 @@ class BusinessType
   end
 
   # Commercial / Offices categories
-  COMMERCIAL_OFFICE = self.new("Commercial / Office",
+  COMMERCIAL_OFFICE = self.new("Commercial/ Office",
     ["OFFICE USE ONLY",
       "OFFICE - PROFESSIONAL BUILDINGS",
       "OFFICE - SALES",
@@ -55,7 +55,7 @@ class BusinessType
       ])
 
   # Leisure / Travel / Recreational categories
-  LEISURE_TRAVEL_RECREATIONAL = self.new("Leisure / Travel / Recreational",
+  LEISURE_TRAVEL_RECREATIONAL = self.new("Leisure/ Travel/ Recreational",
     ["BAR-LOUNGE-NIGHT CLUB",
       "RESTAURANT/CAFET/BAR/LOUNGE/NIGHT CLUB",
       "BAR/COCKTAIL LOUNGE/RESTAURANTS",
@@ -70,7 +70,7 @@ class BusinessType
       ])
 
   # Retail / Services categories
-  RETAIL_SERVICES = self.new("Retail / Services",
+  RETAIL_SERVICES = self.new("Retail/ Services",
     ["RETAIL SALES",
       "BEAUTY SALON-BARBER SHOP",
       "GAS/SERV STATION/AUTO REPAIR/CAR WASH",

@@ -1,20 +1,30 @@
-<% @business_types.each do |business_type| %>
-
-<div class="business-type-box">
-	<%= link_to show_permits_path(business_type.name) do %>
-	<h3><%= business_type.name %></h3>
-	<% end %>
-
-	<div class="list-items">
-		<ul>
-			<% business_type.proposed_use_descriptions.each do |pud| %>
-			<li><%= pud %></li>
-			<% end %>
-		</ul>
+<div class = "col-xs-3">
+	<div class = "side-bar">
+		lalalalala
 	</div>
 </div>
 
-<!-- LINE BREAK -->
-<br>
+<div class = "col-xs-1">
+</div>
 
-<% end %>
+<div class = "col-xs-5">
+	<% @business_types.each do |business_type| %>
+
+	<div class="business-type-box">
+		<%= link_to show_permits_path(business_type.name) do %>
+		<h3><%= business_type.name %></h3>
+		<% end %>
+
+		<div class="list-items">
+			<ul>
+				<% business_type.proposed_use_descriptions.each do |pud| %>
+				<li><%= pud %></li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+	<!-- LINE BREAK -->
+	<br>
+
+	<% end %>
+</div>
