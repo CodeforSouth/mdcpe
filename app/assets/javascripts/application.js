@@ -15,13 +15,6 @@
 //= require turbolinks
 //= require_tree .
 
-// $(function() {
-// 	$( ".accordion" ).accordion({
-// 		collapsible: true,
-// 		active: false
-// 	});
-// });
-
 $(document).ready(function(){
 	var showTotal = function () {
 		var total = 0;
