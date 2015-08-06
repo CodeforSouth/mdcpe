@@ -14,6 +14,10 @@ class BusinessType
     categories.map {|category| CategoryCode[category]}
   end
 
+  def category_averages
+    Permit.where(proposedusedescription: @proposed_use_descriptions).select(:categories).group(:categories).average(:estimatedvalue)
+  end
+
 
   def self.all
     [ COMMERCIAL_OFFICE,

@@ -1,7 +1,16 @@
-<p>
-	<%= @business.name %>
-	<% @business.category_names.each do |category| %>
-		<%= category %>
-	<% end %>
-</p>
+<table>
 
+<tr>
+<th>Code</th>
+<th>Description</th>
+<th>Average</th>
+</tr>
+<% @business.category_averages.each do |category_average| %>
+	<tr>
+		<td><%= category_average.first %></td>
+		<td><%= CategoryCode[category_average.first] %></td>
+		<td><%= number_to_currency category_average.last %></td>
+	</tr>
+<% end %>
+
+</table>
