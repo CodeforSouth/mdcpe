@@ -15,8 +15,20 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).ready(function(){
+	$('button').click(function () {
+		var total = 0;
+
+		$(':checkbox:checked.total').each(function () {
+			total += +this.value;
+		});
+
+		alert(total)
+	});
+});
+
 $(function() {
-	$( ".business-type-box" ).accordion({
+	$('.business-type-box').accordion({
 		collapsible: true,
 		active: false
 	});
