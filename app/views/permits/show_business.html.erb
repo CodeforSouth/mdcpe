@@ -1,26 +1,27 @@
 <div class = "col-xs-3">
 	<div class = "side-bar">
-		lalalalala
+		More information
 	</div>
 </div>
 
 <div class = "col-xs-1">
 </div>
 
-<div class = "col-xs-5">
-	<% @business_types.each do |business_type| %>
 
+<div class="col-xs-5">
+	<% @business_types.each do |business_type| %>
 	<div class="business-type-box">
 		<%= link_to show_permits_path(business_type.name) do %>
 		<h3><%= business_type.name %></h3>
 		<% end %>
-
+		<div class = "collapse">
 		<div class="list-items">
 			<ul>
 				<% business_type.proposed_use_descriptions.each do |pud| %>
 				<li><%= pud %></li>
 				<% end %>
 			</ul>
+		</div>
 		</div>
 	</div>
 	<!-- LINE BREAK -->

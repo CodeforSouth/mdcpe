@@ -33,3 +33,10 @@ $(document).ready(function(){
 		alert(total)
 	});
 });
+
+$(function() {
+	$('.business-type-box').accordion({
+		collapsible: true,
+		active: false
+	});
+});

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Miami Dade Permit Estimator</title>
+	<title>Miami-Dade Permit Estimator</title>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 	<%= csrf_meta_tags %>
 </head>
 
@@ -14,7 +16,7 @@
 
 		<div class="nav">
 			<%= link_to root_path, id: "logo" do %>
-				<h5>Miami Dade County</h5>
+				<h4>Miami-Dade County</h4>
 				<h4>Permit Estimator</h4>
 			<% end %>
 
