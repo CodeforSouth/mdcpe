@@ -15,7 +15,7 @@ class BusinessType
   end
 
   def category_averages
-    Permit.where(proposedusedescription: @proposed_use_descriptions).select(:categories).group(:categories).average(:estimatedvalue)
+    Permit.where(proposedusedescription: @proposed_use_descriptions).select(:categories).group(:categories).order(:categories).average(:estimatedvalue)
   end
 
 

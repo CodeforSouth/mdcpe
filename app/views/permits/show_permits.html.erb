@@ -1,12 +1,13 @@
 <table>
-
 <tr>
+<th>Checkbox</th>
 <th>Code</th>
 <th>Description</th>
 <th>Average</th>
 </tr>
 <% @business.category_averages.each do |category_average| %>
 	<tr>
+		<td><input type="checkbox" class="total" value="<%= category_average.last.to_f %>"</td>
 		<td><%= category_average.first %></td>
 		<td><%= CategoryCode[category_average.first] %></td>
 		<td><%= number_to_currency category_average.last %></td>
@@ -14,3 +15,5 @@
 <% end %>
 
 </table>
+
+<button type="button">total?</button>

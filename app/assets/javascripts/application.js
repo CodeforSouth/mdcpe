@@ -21,3 +21,15 @@
 // 		active: false
 // 	});
 // });
+
+$(document).ready(function(){
+	$('button').click(function () {
+		var total = 0;
+
+		$(':checkbox:checked.total').each(function () {
+			total += +this.value;
+		});
+
+		alert(total)
+	});
+});
