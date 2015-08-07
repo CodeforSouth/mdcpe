@@ -23,16 +23,14 @@ $(document).ready(function(){
 			total += +$(this).data()['average'];
 			total = total;
 		});
-
 		$('#output').text(total);
 	}
-	
 	$("input[type='checkbox']").change(showTotal);
 });
 
-// $(function() {
-// 	$('.business-type-box').accordion({
-// 		collapsible: true,
-// 		active: false
-// 	});
-// });
+$(function() {
+	$('.business-type-box').accordion({
+		collapsible: true,
+		active: false
+	});
+});
