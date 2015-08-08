@@ -15,30 +15,30 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
-	var showTotal = function () {
-		var total = 0;
+// $(document).ready(function(){
+// 	var showTotal = function () {
+// 		var total = 0;
 
-		$(':checkbox:checked.total').each(function () {
-			total += +$(this).data()['average'];
-			total = total;
-		});
-		$('#output').text('$'+numberWithCommas(total.toFixed(2)));
-	}
-	$("input[type='checkbox']").change(showTotal);
-});
+// 		$(':checkbox:checked.total').each(function () {
+// 			total += +$(this).data()['average'];
+// 			total = total;
+// 		});
+// 		$('#output').text('$'+numberWithCommas(total.toFixed(2)));
+// 	}
+// 	$("input[type='checkbox']").change(showTotal);
+// });
 
-$(function() {
-	$('.business-type-box').accordion({
-		collapsible: true,
-		active: false
-	});
-});
+// $(function() {
+// 	$('.business-type-box').accordion({
+// 		collapsible: true,
+// 		active: false
+// 	});
+// });
 
-function numberWithCommas(x) {
-    x = x.toString();
-    var pattern = /(-?\d+)(\d{3})/;
-    while (pattern.test(x))
-        x = x.replace(pattern, "$1,$2");
-    return x;
-}
+// function numberWithCommas(x) {
+//     x = x.toString();
+//     var pattern = /(-?\d+)(\d{3})/;
+//     while (pattern.test(x))
+//         x = x.replace(pattern, "$1,$2");
+//     return x;
+// }
