@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root                          'permits#home'
+  root                          'permits#show_business'
   get 'home'                =>  'permits#home'
   get 'help'                =>  'permits#help'
   get 'show_business'       =>  'permits#show_business'
