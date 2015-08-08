@@ -9,13 +9,17 @@
 }
 a {
   margin-top: -2em;
-  color: black;
+  color: #1182AC;
 }
 .side-bar {
   border: 1px solid #C0C0C0;
   background-color: #F9F9F9;
   margin-left: 1.3em;
 }
+/*.govsite a {
+  color: #1182AC;
+}*/
+
 .col-xs-5 .business-type-box {
   border: 1px solid #C0C0C0;
   background-color: #F9F9F9;
@@ -35,4 +39,10 @@ a {
 }
 button {
   margin-right: 1.3em;
+}
+.centered-text {
+    text-align:center
+}
+.col-xs-4 {
+  margin-top: 26em;
 }

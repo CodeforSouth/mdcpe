@@ -1,21 +1,52 @@
-<table>
-<tr>
-<th>Checkbox</th>
-<th>Code</th>
-<th>Description</th>
-<th>Average</th>
-</tr>
-<% @business.category_averages.each do |category_average| %>
-	<tr>
-		<td><input type="checkbox" class="total" data-average="<%= category_average.last.to_f %>"</td>
-		<td><%= category_average.first %></td>
-		<td><%= CategoryCode[category_average.first] %></td>
-		<td><%= number_to_currency category_average.last %></td>
-	</tr>
-<% end %>
+<div class = "col-xs-3">
+</div>
 
-</table>
+<div class="col-xs-5">
+  <table>
+  <tr>
+  <th>Checkbox</th>
+  <th>Code</th>
+  <th>Description</th>
+  <th>Average</th>
+  </tr>
+  <% @business.category_averages.each do |category_average| %>
+  	<tr>
+  		
+  		<div class = "col-xs-1">
+  			<td><input type="checkbox" class="total" data-average="<%= category_average.last.to_f %>"></td>
+  		</div>
 
-<button type="button">total?</button>
 
-<span id="output"></span>
+  		<div class = "col-xs-2">
+  		<td><%= category_average.first %></td>
+  		</div>
+
+
+
+  		<div class = "col-xs-3">
+  		<td><%= CategoryCode[category_average.first] %></td>
+  		</div>
+
+
+
+  		<div class = "col-xs-3">
+  		<td><%= number_to_currency category_average.last %></td>
+  		</div>
+
+
+  	</tr>
+  
+  
+  <% end %>
+
+  </table>
+   
+   
+</div>
+
+<div class = "col-xs-3">
+
+	<button type="button" class="btn btn-default">TOTAL</button>
+  
+  <span id="output"></span>
+</div>

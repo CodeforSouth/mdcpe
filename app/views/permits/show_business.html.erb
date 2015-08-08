@@ -8,6 +8,13 @@
 </div>
 
 <div class="col-xs-5">
+	Welcome to the Miami-Dade County Permit Estimator. Here you will find the latest average costs for Building Permits. For more information, please check out <a href="http://www.miamidade.gov/permits/" class="govsite">Find a Permit - Miami-Dade</a>  
+	<br>
+	<br>
+	<br>
+	<div>Please select your business category</div>
+	<br>
+	<br>
 	<% @business_types.each do |business_type| %>
 	<div class="business-type-box">
 		<%= link_to show_permits_path(business_type.name) do %>
@@ -23,6 +30,9 @@
 			<button type="button" class="btn btn-default pull-right">
 				<%= link_to "CONTINUE", show_permits_path(business_type.name) %>
 			</button>
+			<br>
+			<br>
+
 		</div>
 		</div>
 	</div>

@@ -23,7 +23,7 @@ $(document).ready(function(){
 			total += +$(this).data()['average'];
 			total = total;
 		});
-		$('#output').text(total);
+		$('#output').text('$'+numberWithCommas(total.toFixed(2)));
 	}
 	$("input[type='checkbox']").change(showTotal);
 });
@@ -34,3 +34,11 @@ $(function() {
 		active: false
 	});
 });
+
+function numberWithCommas(x) {
+    x = x.toString();
+    var pattern = /(-?\d+)(\d{3})/;
+    while (pattern.test(x))
+        x = x.replace(pattern, "$1,$2");
+    return x;
+}
