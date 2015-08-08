@@ -12,23 +12,27 @@
 
 <body>
 
-	<header class="page-header">
-
-		<div class="nav">
-			<%= link_to root_path, id: "logo" do %>
-				<h4>Miami-Dade County</h4>
-				<h4>Permit Estimator</h4>
-			<% end %>
-
-			<ul class="nav nav-pills navbar-right">
-				<li><%= link_to "Home", 	root_path %></li>
-				<li><%= link_to "Help",		help_path %></li>
-			</ul>
-		</div>
-
-	</header>
-
-	<%= yield %>
+  <header class="page-header">
+  	<div class="nav">
+  	  <%= link_to root_path, id: "logo" do %>
+  	  	<h4>Miami-Dade County</h4>
+  	  	<h4>Permit Estimator</h4>
+  	  <% end %>
+  	  <ul class="nav nav-pills navbar-right">
+  	  	<li><%= link_to "Home", 	root_path %></li>
+  	  	<li><%= link_to "Help",		help_path %></li>
+  	  </ul>
+  	</div>
+  </header>
+  <%= yield %>
 
 </body>
+
+<div class = "col-xs-12"><hr>© 2015 Miami-Dade County. All rights reserved.
+<br>
+<br>
+<br>
+<br>
+</div>
+
 </html>

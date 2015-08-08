@@ -1,7 +1,20 @@
 <div class = "col-xs-3">
+  <div class = "side-bar">
+    <strong>More Information</strong>
+    <br>
+    <br>
+    <br>
+    <a href="http://www.miamidade.gov/permits/" class="govsite">Find a Permit - Miami-Dade</a> 
+    <br>
+    <br>
+    <br>
+  </div>
 </div>
 
-<div class="col-xs-5">
+<div class = "col-xs-.9">
+</div>
+
+<div class="col-xs-6">
   <table>
   <tr>
   <th>Checkbox</th>
@@ -11,42 +24,28 @@
   </tr>
   <% @business.category_averages.each do |category_average| %>
   	<tr>
-  		
-  		<div class = "col-xs-1">
-  			<td><input type="checkbox" class="total" data-average="<%= category_average.last.to_f %>"></td>
-  		</div>
-
-
-  		<div class = "col-xs-2">
-  		<td><%= category_average.first %></td>
-  		</div>
-
-
-
-  		<div class = "col-xs-3">
-  		<td><%= CategoryCode[category_average.first] %></td>
-  		</div>
-
-
-
-  		<div class = "col-xs-3">
-  		<td><%= number_to_currency category_average.last %></td>
-  		</div>
-
-
+  	  <div class = "col-xs-1">
+  	    <td><input type="checkbox" class="total" data-average="<%= category_average.last.to_f %>"></td>
+  	  </div>
+  	  <div class = "col-xs-2">
+  	  <td><%= category_average.first %></td>
+  	  </div>
+  	  <div class = "col-xs-3">
+  	  <td><%= CategoryCode[category_average.first] %></td>
+  	  </div>
+  	  <div class = "col-xs-3">
+  	  <td><%= number_to_currency category_average.last %></td>
+  	  </div>
   	</tr>
-  
-  
   <% end %>
-
   </table>
-   
-   
-</div>
-
-<div class = "col-xs-3">
-
-	<button type="button" class="btn btn-default">TOTAL</button>
-  
+   <br>   
+   <br>   
+  <button type="button" class="btn btn-default pull-right">
+  <%= link_to "CALCULATE" %>
+  </button>
   <span id="output"></span>
+  <br>
+  <br>
+  <br>
 </div>

@@ -16,10 +16,6 @@ a {
   background-color: #F9F9F9;
   margin-left: 1.3em;
 }
-/*.govsite a {
-  color: #1182AC;
-}*/
-
 .col-xs-5 .business-type-box {
   border: 1px solid #C0C0C0;
   background-color: #F9F9F9;
@@ -29,6 +25,7 @@ a {
   margin-left:1em;
   text-transform: uppercase;
   font-size: 1.2em;
+  height: 1.5em;
 }
 .list-items li {
   list-style: none;
@@ -45,4 +42,14 @@ button {
 }
 .col-xs-4 {
   margin-top: 26em;
+}
+.col-xs-6 {
+  border: 1px solid #C0C0C0;
+  background-color: #F9F9F9;
+  margin-top: 5em;
+  margin-left: 2em;
+}
+.col-xs-12 {
+  margin-top: 12em;
+  text-align: center;
 }
