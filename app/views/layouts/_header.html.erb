@@ -1,10 +1,19 @@
-<header class="navbar">
-	<div class="navbar-container">
-		<%= link_to "Mips", root_path, id: "logo" %>
-		<ul>
-			<li><%= link_to "Home", 	root_path %></li>
-			<li><%= link_to "Help",		help_path %></li>
-			<li><a href="http://www.miamidade.gov/economy/contact.asp">Contact Us</a></li>
-		</ul>
-	</div>	
-</header>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+	<div class="container">
+		<%= link_to "Miami-Dade County Permit Estimator", root_path, id: "logo" %>
+		<nav>
+			<ul class="nav nav-pills navbar-right">
+				<li><%= link_to "Home", 	root_path %></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Info <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.miamidade.gov/permits/">Find a Permit</a></li>
+						<li><a href="http://www.miamidade.gov/economy/contact.asp">Permits and Inspection Center</a></li>
+						<li><a href="http://www.miamidade.gov/permits/library/building-permit.pdf">Building Permit Categories</a></li>
+					</ul>
+				</li>
+				<li><a href="http://www.miamidade.gov/economy/contact.asp">Contact Us</a></li>
+			</ul>
+		</nav>
+	</div>
+</nav>

@@ -4,69 +4,19 @@
 	<title>Miami-Dade Permit Estimator</title>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<%= csrf_meta_tags %>
 </head>
 
 <body>
+	<%= render 'layouts/header' %>
+	<%= render 'layouts/sidebar' %>
 
-  <header class="page-header">
-  	<div class="nav">
-  	  <%= link_to root_path, id: "logo" do %>
-  	  	<h4>Miami-Dade County</h4>
-  	  	<h4>Permit Estimator</h4>
-  	  <% end %>
-  	  <ul class="nav nav-pills navbar-right">
-  	  	<li><%= link_to "Home", 	root_path %></li>
-  	  	<li><%= link_to "Help",		help_path %></li>
-  	  	<li><a href="http://www.miamidade.gov/economy/contact.asp">Contact Us</a></li>
-  	  </ul>
-  	</div>
-  </header>
-  <%= yield %>
-
-<script type="text/javascript">
-$(document).ready(function(){
-  var showTotal = function () {
-    var total = 0;
-
-    $(':checkbox:checked.total').each(function () {
-      total += +$(this).data()['average'];
-      total = total;
-    });
-    $('#output').text('$'+numberWithCommas(total.toFixed(2)));
-  }
-  $("input[type='checkbox']").change(showTotal);
-});
-
-$(function() {
-  $('.business-type-box').accordion({
-    collapsible: true,
-    active: false
-  });
-});
-
-function numberWithCommas(x) {
-    x = x.toString();
-    var pattern = /(-?\d+)(\d{3})/;
-    while (pattern.test(x))
-        x = x.replace(pattern, "$1,$2");
-    return x;
-}
-</script>
-
-
-
+	<div class="container">
+		<%= yield %>
+		<%= render 'layouts/footer' %>
+	</div>
 
 </body>
-
-<div class = "col-xs-12"><hr>© 2015 Miami-Dade County. All rights reserved.
-<br>
-<br>
-<br>
-<br>
-</div>
-
 </html>

@@ -1,58 +1,88 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-.nav {
-  height: 5.4em;
+
+
+/* universal styles */
+body {
+  margin-top: 80px;
 }
-.nav h4{
-  color: black;
-  margin-left: 2em;
-}
-a {
-  margin-top: -2em;
-  color: #1182AC;
-}
-.side-bar {
-  border: 1px solid #D0D0D0;
-  background-color: #F9F9F9;
-  margin-left: 1.3em;
-}
-.col-xs-5 .business-type-box {
-  border: 1px solid #C0C0C0;
-  background-color: #F9F9F9;
-}
-.business-type-box h3 {
-  color: black;
-  margin-left:1em;
+
+/* navbar styles */
+#logo {
+  float: left;
+  margin-right: 10px;
+  color: white;
   text-transform: uppercase;
-  font-size: 1.2em;
-  height: 1.5em;
+  letter-spacing: -1px;
+  padding-top: 15px;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
-.list-items li {
-  list-style: none;
+
+.nav-pills > li > a {
+  padding-top: 15px;
 }
-.nav .nav-pills {
-  margin-left: auto;
-  margin-right: 0;
-}
-button {
-  margin-right: 1.3em;
-}
-.centered-text {
-    text-align:center
-}
-.side {
-  margin-top: 1.5em;
-  margin-left: 1.5em;
-  margin-right: .5em;
-  margin-bottom: 1.5em;
-}
-.col-xs-6 {
-  border: 1px solid #D0D0D0;
-  background-color: #F9F9F9;
- /* margin-top: 2em;*/
-  margin-left: 5em;
-}
-.col-xs-12 {
-  margin-top: 12em;
-  text-align: center;
-}
+
+
+
+
+
+
+
+
+// .side-bar {
+//   border: 1px solid #D0D0D0;
+//   background-color: #F9F9F9;
+//   margin-left: 1.3em;
+// }
+
+// .col-xs-5 .business-type-box {
+//   border: 1px solid #C0C0C0;
+//   background-color: #F9F9F9;
+// }
+
+// .business-type-box h3 {
+//   color: black;
+//   margin-left:1em;
+//   text-transform: uppercase;
+//   font-size: 1.2em;
+//   height: 1.5em;
+// }
+
+// .list-items li {
+//   list-style: none;
+// }
+
+// .nav .nav-pills {
+//   margin-left: auto;
+//   margin-right: 0;
+// }
+
+// button {
+//   margin-right: 1.3em;
+// }
+
+// .centered-text {
+//     text-align:center
+// }
+
+// .side {
+//   margin-top: 1.5em;
+//   margin-left: 1.5em;
+//   margin-right: .5em;
+//   margin-bottom: 1.5em;
+// }
+
+// .col-xs-6 {
+//   border: 1px solid #D0D0D0;
+//   background-color: #F9F9F9;
+//  /* margin-top: 2em;*/
+//   margin-left: 5em;
+// }
+
+// .col-xs-12 {
+//   margin-top: 12em;
+//   text-align: center;
+// }
