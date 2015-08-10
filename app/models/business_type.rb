@@ -16,9 +16,8 @@ class BusinessType
   end
 
   def category_averages
-    Permit.where(proposedusedescription: @proposed_use_descriptions).select(:categories).group(:categories).order(:categories).average(:estimatedvalue)
+    Permit.where(proposedusedescription: @proposed_use_descriptions).where.not(categories: [nil, 2014024240, 108]).select(:categories).group(:categories).order(:categories).average(:estimatedvalue)
   end
-
 
   def self.all
     [ COMMERCIAL_OFFICE,
