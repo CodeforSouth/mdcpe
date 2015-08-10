@@ -14,31 +14,45 @@ body {
   margin-right: 10px;
   color: #fff;
   text-transform: uppercase;
+  font-family: 'Open Sans', 'Helvetica', 'Arial';
   letter-spacing: -1px;
-  padding-top: 15px;
+  padding-top: 18px;
   &:hover {
     color: #fff;
     text-decoration: none;
   }
 }
 
-.nav-pills > li > a {
-  padding-top: 15px;
+nav.navbar.navbar-fixed-top.navbar-inverse {
+  background-color: #34495e;
 }
 
-/* welcome box styles */
-.weclome-h
+.nav-pills > li > a {
+  padding-top: 15px;
+  text-decoration: none;
+  font-family: 'Open Sans', 'Helvetica', 'Arial';
+  color: white;
+}
 
 /* home page styles */
-.welcome {
-  background-color: #1486BD;
-  opacity: 0.8;
+.logo-image {
+  text-align: center;
+}
+
+.logo-image img {
+  width: 25%;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Open Sans', 'Helvetica', 'Arial';
 }
 
 h4 {
   text-align: center;
   text-decoration: none;
   padding-top: 8px;
+  font-family: 'Open Sans', 'Helvetica', 'Arial';
 }
 
 .columns a {
@@ -47,10 +61,55 @@ h4 {
 }
 
 .columns {
-  background-color: #1486BD;
+  background-color: #34495e;
   border-radius: 5px;
 }
 
 .description-box {
   background-color: #F9F9F9;
+  height: 80px;
+  text-align: center;
+}
+
+/* data-table styles */
+table, th, td {
+    margin: 0 auto;
+    border: 1px solid #C0C0C0;
+    table-layout: fixed;
+}
+
+.data-table {
+  border-collapse: collapse;
+}
+
+.data-table th {
+  text-align: center;
+  height: 30px;
+  background-color: #34495e;
+  color: white;
+}
+
+.data-table td {
+  padding: 5px;
+}
+
+.data-table-checkbox {
+  width: 10%;
+  text-align: center;
+}
+
+.data-table-code {
+  text-align:center;
+  width: 10%;
+}
+
+.data-table-description { 
+}
+
+.data-table-average {
+}
+/* footer */
+.footer {
+  text-align: center;
+  padding-top: 15px;
 }
