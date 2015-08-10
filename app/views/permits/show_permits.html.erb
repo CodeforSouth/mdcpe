@@ -7,18 +7,10 @@
 	</tr>
 	<% @business.category_averages.each do |category_average| %>
 	<tr>
-		<div class = "col-xs-1">
 			<td class="data-table-checkbox"><input type="checkbox" class="total" data-average="<%= category_average.last.to_f %>"></td>
-		</div>
-		<div class = "col-xs-2">
 			<td class="data-table-code"><%= category_average.first %></td>
-		</div>
-		<div class = "col-xs-3">
 			<td class="data-table-description"><%= CategoryCode[category_average.first] %></td>
-		</div>
-		<div class = "col-xs-3">
 			<td class="data-table-average"><%= number_to_currency category_average.last %></td>
-		</div>
 	</tr>
 	<% end %>
 </table>
