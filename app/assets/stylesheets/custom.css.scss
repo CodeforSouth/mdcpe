@@ -3,21 +3,21 @@
 
 
 /* universal styles */
-
-/* navbar styles */
-nav.navbar.navbar-default {
-  background-color: #1486BD;
+body {
+  margin-top: 80px;
+  background-color: #ecf0f1;
 }
 
+/* navbar styles */
 #logo {
   float: left;
   margin-right: 10px;
-  color: black;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 15px;
   &:hover {
-    color: black;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -25,6 +25,9 @@ nav.navbar.navbar-default {
 .nav-pills > li > a {
   padding-top: 15px;
 }
+
+/* welcome box styles */
+.weclome-h
 
 /* home page styles */
 .welcome {
