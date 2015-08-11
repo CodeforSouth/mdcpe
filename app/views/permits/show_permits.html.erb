@@ -7,16 +7,19 @@
 	</tr>
 	<% @business.category_averages.each do |category_average| %>
 	<tr>
-			<td class="data-table-checkbox"><input type="checkbox" class="total" data-average="<%= category_average.last.to_f %>"></td>
-			<td class="data-table-code"><%= category_average.first %></td>
-			<td class="data-table-description"><%= CategoryCode[category_average.first] %></td>
-			<td class="data-table-average"><%= number_to_currency category_average.last %></td>
+		<td class="data-table-checkbox"><input type="checkbox" class="total" data-average="<%= category_average.last.to_f %>"></td>
+		<td class="data-table-code"><%= category_average.first %></td>
+		<td class="data-table-description"><%= CategoryCode[category_average.first] %></td>
+		<td class="data-table-average"><%= number_to_currency category_average.last %></td>
 	</tr>
 	<% end %>
 </table>
 <br>   
 <br>   
-<button type="button" class="btn btn-default pull-right">
-	<%= link_to "CALCULATE" %>
-</button>
-<span id="output"></span>
+<div class="calculation">
+	<button type="button" class="btn btn-default">
+		<%= link_to "CALCULATE" %>
+	</button>
+	<span id="output"></span>	
+</div>
+

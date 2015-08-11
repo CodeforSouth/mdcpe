@@ -29,13 +29,6 @@ $(document).ready(function(){
 	$('.dropdown-toggle').dropdown();
 });
 
-$(function() {
-	$('.business-type-box').accordion({
-		collapsible: true,
-		active: false
-	});
-});
-
 function numberWithCommas(x) {
     x = x.toString();
     var pattern = /(-?\d+)(\d{3})/;

@@ -8,6 +8,7 @@ body {
   background-color: #ecf0f1;
 }
 
+
 /* navbar styles */
 #logo {
   float: left;
@@ -33,6 +34,15 @@ nav.navbar.navbar-fixed-top.navbar-inverse {
   font-family: 'Open Sans', 'Helvetica', 'Arial';
   color: white;
 }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #c0392b;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #c0392b;
+}
+
 
 /* home page styles */
 .logo-image {
@@ -71,6 +81,7 @@ h4 {
   text-align: center;
 }
 
+
 /* data-table styles */
 table, th, td {
     margin: 0 auto;
@@ -108,6 +119,8 @@ table, th, td {
 
 .data-table-average {
 }
+
+
 /* footer */
 .footer {
   text-align: center;
