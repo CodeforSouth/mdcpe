@@ -30,7 +30,7 @@ namespace :populate_database do
   desc "TODO"
   task permits: :environment do
 
-    response = HTTParty.get('https://opendata.miamidade.gov/resource/awsz-tanw.json?$limit=50000')
+    response = HTTParty.get('https://opendata.miamidade.gov/resource/awsz-tanw.json?$limit=8000')
     data = response.parsed_response
 
     Permit.destroy_all
