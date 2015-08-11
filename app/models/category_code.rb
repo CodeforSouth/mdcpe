@@ -1,13 +1,17 @@
 class CategoryCode
 
- def self.all
+# Returns the BUILDING_PERMIT_CATEGORIES hash
+def self.all
   BUILDING_PERMIT_CATEGORIES
 end
 
+# Access a code from the BUILDING_PERMIT_CATEGORIES hash by calling the class and passing a code
+# EX: CategoryCode[1] => "GENERAL BUILDING-COMMERCIAL"
 def self.[] key
   BUILDING_PERMIT_CATEGORIES[key.to_s]
 end
 
+# The master list for all category codes and their descriptions
 BUILDING_PERMIT_CATEGORIES = {
   "1"       => "GENERAL BUILDING—COMMERCIAL",
   "2"       => "SUB—GENERAL BUILDING—RESIDENTIAL",
