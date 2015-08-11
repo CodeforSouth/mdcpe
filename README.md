@@ -10,7 +10,7 @@ prices.
 The project as of August 13, 2015 is in its first iteration.
 
 ## Who
-The creator of this application are Steve Toro, Christina Vinces and Ricky Gonzalez Jr.
+The creators of this project are Steve Toro, Christina Vinces and Ricky Gonzalez Jr.
 
 ## How
 #### Install
@@ -21,7 +21,7 @@ instructions below:
 project. This task is responsible for populating your local database with county’s
 data.
 
-(http://i.imgur.com/cLGOUO9.png)
+![Instructions](http://i.imgur.com/cLGOUO9.png)
 
 2. Inside populate_database.rake is a rails generate command for generating your model
 (this project defaults to the name ‘Permit’ for the model).
