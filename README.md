@@ -13,15 +13,8 @@ The project as of August 13, 2015 is in its first iteration.
 #### Link
 A live demo of this project can be found at www.mdcpe.co
 
-## Who
-The creators of this project are [Steve Toro](http://www.github.com/stevetoro), [Christina Vinces](http://www.github.com/christinavinces) and [Ricky Gonzalez Jr.](http://www.github.com/RickyGonzJr)
-
-A big thank you to the following people and organizations for their help in the creation of this project:
-
-Ernie Hsiung, Mike Sarasti, Ed Toro & Code for Miami
-
 ## How
-#### Install
+#### Getting Started
 To set up your local database with Miami-Dade County’s data, please follow the
 instructions below:
 
@@ -39,6 +32,13 @@ data.
 4. Run `rake populate_database:permits` to populate your table with Miami-Dade County’s permit data. This process will take some time. You can limit how many rows of data you decide to pull down by adjusting the `$limit` value in the HTTParty response. If you’d like to pull down all of the data, simply remove this value.
 
 ![Instructions](http://i.imgur.com/oexvF9u.png)
+
+## Who
+The creators of this project are [Steve Toro](http://www.github.com/stevetoro), [Christina Vinces](http://www.github.com/christinavinces) and [Ricky Gonzalez Jr.](http://www.github.com/RickyGonzJr)
+
+A big thank you to the following people and organizations for their help in the creation of this project:
+
+Ernie Hsiung, Mike Sarasti, Ed Toro & Code for Miami
 
 ## License
 This application is freely available under the MIT License: https://github.com/RickyGonzJr/mdcpe/blob/master/LICENSE.md
