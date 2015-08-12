@@ -10,7 +10,7 @@ pricing and availability by offering a more human-friendly interface for accessi
 #### Status
 The project as of August 13, 2015 is in its first iteration.
 
-### Link
+#### Link
 A live demo of this project can be found at www.mdcpe.co
 
 ## Who
