@@ -14,7 +14,7 @@ The project as of August 13, 2015 is in its first iteration.
 A live demo of this project can be found at www.mdcpe.co
 
 ## Who
-The creators of this project are [Steve Toro](github.com/stevetoro), [Christina Vinces](github.com/christinavinces) and [Ricky Gonzalez Jr.](github.com/RickyGonzJr)
+The creators of this project are [Steve Toro](www.github.com/stevetoro), [Christina Vinces](www.github.com/christinavinces) and [Ricky Gonzalez Jr.](www.github.com/RickyGonzJr)
 
 A big thank you to the following people and organizations for their help in the creation of this project:
 
