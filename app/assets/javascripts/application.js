@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
+function ready(){
 	var showTotal = function () {
 		var total = 0;
 
@@ -25,9 +25,13 @@ $(document).ready(function(){
 		});
 		$('#output').text('$'+numberWithCommas(total.toFixed(2)));
 	}
-	$("input[type='checkbox']").change(showTotal);
+	// $("input[type='checkbox']").change(showTotal);
+	$('#calculate-button').click(showTotal);
 	$('.dropdown-toggle').dropdown();
-});
+}
+
+$(document).on('ready', ready);
+$(document).on('page:load', ready);
 
 function numberWithCommas(x) {
     x = x.toString();
