@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
+gem 'actionpack', '>= 4.2.5.2'
+gem 'activemodel', '>= 4.2.5.1'
+gem 'actionview', '>= 4.2.7.1'
+gem 'activerecord', '>= 4.2.7.1'
+gem 'activejob', '>= 4.2.11'
 gem 'httparty'
 gem 'bootstrap-sass'
 gem 'pg'
